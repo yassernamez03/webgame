@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block login %}
+<header>
+    <h1>Helloo king</h1>
+    <nav>
+        <a href="{{url_for('logout')}}" class="a">LOGOUT</a>
+    </nav>
+</header>
+<div class="tables">
+    {% for e in data %}
+    <div>
+        <span> Username :{{e.username}} //</span>
+        <span> PassWord :{{e.password}} //</span>
+        <span> Email :{{emails[data.index(e)]}}</span>
+    </div>
+    {% endfor%}
+</div>
+{% endblock %}

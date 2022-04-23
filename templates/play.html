@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block play %}
+<div class="container">
+    <div class="left">
+        <div class="player1">
+            <h1 class="h1"> Player1
+                <div class="ongame1">
+                    0
+                </div>
+            </h1>
+            <p>
+
+            </p>
+        </div>
+        <div class="scorebar1">
+            <p class="sbar1">
+                0
+            </p>
+        </div>
+        <div class="loggameout"><a href="{{url_for('logout')}}" class="a">LOGOUT</a></div>
+    </div>
+    <section class="flow">
+
+        <div class="newgame">New</div>
+        <img src="{{url_for('static', filename='/images/logo.png')}}" alt="imgs" id="dice">
+        <div class="Spin">Spin</div>
+        <div class="Pass">Pass</div>
+    </section>
+    <div class="right">
+        <div class="player2">
+            <h1 class="h1"> Player2
+                <div class="ongame2">
+                    0
+                </div>
+            </h1>
+            <p>
+
+            </p>
+        </div>
+        <div class="scorebar2">
+            <p class="sbar2">
+                0
+            </p>
+        </div>
+        <div class="loggameout"><a href="{{url_for('logout')}}" class="a">LOGOUT</a></div>
+    </div>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</div>
+{% endblock play %}

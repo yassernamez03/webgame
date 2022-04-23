@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block signup %}
+<header>
+    <h1>Helloo king</h1>
+    <nav>
+        <a href="{{url_for('home')}}" class="a">LOGIN</a>
+    </nav>
+</header>
+<div class="container">
+    <div class="signup">
+        <form action="signup" method="POST">
+            <label for="mail">__Email__</label>
+            <input type="text" name="mail" id="mail" class="email" placeholder="Email">
+            <label for="username">User_Name</label>
+            <input type="text" name="username" class="username" placeholder="Username">
+            <label for="password">PassWord</label>
+            <input type="password" name="password" class="password" placeholder="Password">
+            <label for="conform_password">Confirmer PassWord</label>
+            <input type="password" name="conform_password" class="conform_password" placeholder="Confirmer">
+            <input type="submit" id="signup" value="signup">
+        </form>
+    </div>
+</div>
+{% endblock signup %}

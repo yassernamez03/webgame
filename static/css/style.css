@@ -1,0 +1,182 @@
+/*base*/
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(255, 255, 255, 2);
+}
+
+header {
+    margin: 0%;
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.582);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    color: orangered;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 1px;
+    justify-content: right;
+}
+
+.a {
+    text-decoration: none;
+    color: orangered;
+    font-family: 'Rubik Wet Paint', cursive;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 1px;
+    border-radius: 20px;
+}
+
+.a:hover {
+    background-color: black;
+}
+
+
+/*login*/
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0%;
+}
+
+table,
+td,
+th {
+    border: 3px solid black;
+}
+
+.login {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    font-family: 'Rubik Wet Paint', cursive;
+    border: 3px solid orangered;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.login:hover {
+    border: 10px solid orangered;
+}
+
+#login {
+    background-color: white;
+    width: 80px;
+    height: 30px;
+}
+
+#login:hover {
+    background-color: black;
+    color: orangered;
+}
+
+#signup {
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    transform-origin: center;
+    transition: all 1s;
+}
+
+#signup:hover {
+    background-color: black;
+    color: orangered;
+}
+
+#login,
+#signup,
+.password,
+.username,
+.conform_password,
+.email {
+    margin: 10px;
+    font-family: 'Rubik Wet Paint', cursive;
+    border-radius: 20px;
+}
+
+.password,
+.username,
+.conform_password,
+.email {
+    width: 200px;
+    height: 25px;
+    padding: 2px;
+    padding-left: 3px;
+}
+
+
+/*signup*/
+
+.signup {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    font-family: 'Rubik Wet Paint', cursive;
+    border: 3px solid orangered;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+
+/* users*/
+
+.tables {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/* play*/
+
+.play {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 10px;
+    border-style: dashed;
+    border-color: black;
+    transform: rotate(0deg);
+    animation: play;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: all 1s;
+}
+
+@keyframes play {
+    100% {
+        transform: rotate(360deg);
+    }
+}
